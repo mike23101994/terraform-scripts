@@ -61,11 +61,3 @@ variable "is_organization_trail" {
 variable "s3_key_prefix" {
   default     = "nile-cloudtrail-acesslog/cloudtraillogs"
 }
-
-variable "aws_access_key" {
-  default = "AKIAXJEXHIXCDWCT6DLF"
-}
-
-variable "aws_secret_key" {
-  default = "c6bWAqHa+B78SKM9vU+/dMDnNM2Gk0GA9hh5IKll"
-}
