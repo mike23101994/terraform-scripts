@@ -1,0 +1,6 @@
+{
+  "LoggingEnabled": {
+    "TargetBucket": "audit-bucket-2310",
+    "TargetPrefix": "audit-bucket-2310/ems-distribution/s3-server-access-logs/"
+  }
+}
