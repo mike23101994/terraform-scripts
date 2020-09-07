@@ -33,7 +33,7 @@ resource "aws_ebs_snapshot_copy" "ebs_snapshot_copy" {
 }
 
 
-# module "ec2_mod_for_ebs_snapshot" {
-#   count = var.ebs_snapshot ? 1 : 0
-#   source =  "./module_ec2"
-# }
+module "ec2_mod_for_ebs_snapshot" {
+  count = var.ebs_snapshot ? 1 : 0
+  source =  "./module_ec2"
+}
