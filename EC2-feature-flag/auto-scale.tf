@@ -47,6 +47,13 @@ resource "aws_autoscaling_group" "niledemo" {
     create_before_destroy = true
   }
 }
+  
+  # Create a new ALB Target Group attachment
+# resource "aws_autoscaling_attachment" "asg_attachment_bar" {
+#   count = var.autoscaling ? 1 : 0
+#   autoscaling_group_name = aws_autoscaling_group.niledemo[0].id
+#   alb_target_group_arn   = var.alb_arn
+# }
 
 module "ec2_mod_for_autoscale" {
   count = var.autoscaling ? 1 : 0
