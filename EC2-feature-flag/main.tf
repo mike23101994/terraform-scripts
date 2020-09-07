@@ -6,7 +6,7 @@ provider "aws" {
 
 module "ec2_module" {
   # enable = true
-  count = 0
+  count = ! var.fleet_enabled && ! var.eip_enabled && ! var.ebs_snapshot &&!  var.autoscaling? 1 : 0
   source = "./module_ec2"
 }
 
