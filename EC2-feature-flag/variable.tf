@@ -61,6 +61,10 @@ variable "autoscaling" {
     default = true
 }
 
+variable "alb_arn" {
+  default = "arn:aws:elasticloadbalancing:us-east-1:154542059199:targetgroup/Nile-Target-Group/425df7c1386cda72"
+}
+
 
 ## For EBS snapshot:
 
