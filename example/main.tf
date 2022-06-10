@@ -7,6 +7,14 @@ resource "aws_instance" "web" {
   }
 }
 
+
+terraform {
+  backend "s3" {
+    bucket = "harness-mainak"
+    region = "us-east-1"
+  }
+}
+
 provider "aws" {
     region = "us-east-1"
 }
